@@ -1,29 +1,6 @@
 "" Makes it so doxygen style C++ comments /// continue correctly.
 set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,bO:///,O://
 
-"set ts=2
-"set sw=2
-"set tw=80
-"set et
-""set ai
-""set si
-"
-"set shiftwidth=4
-"set tabstop=4
-"set softtabstop=4
-"set expandtab
-"set textwidth=80
-"set wrap
-"set cindent
-"set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
-"set indentexpr=GoogleCppIndent()
-"let b:undo_indent = "setl sw< ts< sts< et< tw< wrap< cin< cino< inde<"
-"
-"let g:clang_complete_copen=1
-"let g:clang_user_options = '-I/usr/include -I/usr/local/include -std=c++11'
-
-
-
 " Vim indent file
 " Language:	C++
 " Maintainer:	Konstantin Lepa <konstantin.lepa@gmail.com>
