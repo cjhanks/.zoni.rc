@@ -45,7 +45,7 @@ export EDITOR=vim
 
 if [ -e ~/.zsh.rc/ ]
 then
-  for path in ~/.zshr.rc/
+  for path in ~/.zsh.rc/*
   do
     source ${path}
   done
