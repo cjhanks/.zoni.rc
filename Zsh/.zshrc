@@ -43,10 +43,14 @@ export EDITOR=vim
 # RC files.
 ################################################################################
 
-if [ -e ~/.zsh.rc/ ]
-then
-  for path in ~/.zsh.rc/*
-  do
-    source ${path}
-  done
-fi
+loadrc() {
+  if [ -e ~/.zsh.rc/ ]
+  then
+    for pth in ~/.zsh.rc/*
+    do
+      source ${pth}
+    done
+  fi
+}
+
+loadrc
