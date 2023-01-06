@@ -4,7 +4,18 @@
 
 ROOT=${PWD}
 
-ln -s ${ROOT}/Vim/.vimrc ~/.vimrc
-ln -s ${ROOT}/Vim/.vim   ~/.vim
+# Set the symlinks.
+ln -s ${ROOT}/Vim/.vimrc  ~/.vimrc
+ln -s ${ROOT}/Vim/.vim    ~/.vim
+ln -s ${ROOT}/Zsh/.zsh.rc ~/.zsh.rc
 
-ln -s ${ROOT}/Vim/.zshrc ~/.zshrc
+# Install oh-my-zsh
+export RUNZSH=no
+bash ${ROOT}/Zsh/oh-my-zsh-install.sh
+
+cat >> ~/.zshrc <<EOF
+for f in ~/.zsh.rc/*.zsh
+do
+  source \${f}
+done
+EOF
