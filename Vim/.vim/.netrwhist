@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/mnt/blip/Regression-Results'
-let g:netrw_dirhist_2='/home/cjhanks/Project/PING'
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/zeek/grandeluge.com/src/pages'
+let g:netrw_dirhist_9='/Users/zeek/grandeluge.com/src'
+let g:netrw_dirhist_8='/Users/zeek/grandeluge.com'
+let g:netrw_dirhist_7='/Users/zeek/cjhanks.name/src'
+let g:netrw_dirhist_6='/Users/zeek/cjhanks.name/src/pages'
+let g:netrw_dirhist_5='/Users/zeek/cjhanks.name/src'
+let g:netrw_dirhist_4='/Users/zeek/cjhanks.name/src/pages'
+let g:netrw_dirhist_3='/Users/zeek/cjhanks.name/src'
+let g:netrw_dirhist_2='/Users/zeek/cjhanks.name'
+let g:netrw_dirhist_1='/Users/zeek/cjhanks.name/src/pages'

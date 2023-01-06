@@ -1,6 +1,3 @@
-"" Makes it so doxygen style C++ comments /// continue correctly.
-set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,bO:///,O://
-
 " Vim indent file
 " Language:	C++
 " Maintainer:	Konstantin Lepa <konstantin.lepa@gmail.com>
@@ -19,9 +16,9 @@ set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,bO:///,O://
 "}}}
 
 if exists("b:did_indent")
-   finish
+    finish
 endif
-let b:did_indent=1
+let b:did_indent = 1
 
 
 function! GoogleCppIndent()
@@ -79,16 +76,17 @@ function! GoogleCppIndent()
     return l:orig_indent
 endfunction
 
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set expandtab
-set textwidth=80
-set wrap
-set cindent
-set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+setlocal shiftwidth=2
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal expandtab
+setlocal textwidth=80
+setlocal wrap
 
-set indentexpr=GoogleCppIndent()
+setlocal cindent
+setlocal cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+
+setlocal indentexpr=GoogleCppIndent()
 
 let b:undo_indent = "setl sw< ts< sts< et< tw< wrap< cin< cino< inde<"
-""
+
