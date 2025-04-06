@@ -51,3 +51,4 @@ endfunction
 " --
 
 set modeline
+set mouse=n
