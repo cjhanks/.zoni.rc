@@ -5,6 +5,9 @@
 " Notes:        originally based on Bram Molenaar's indent file for vim
 
 setlocal autoindent
+setlocal ts=2
+setlocal sw=2
+setlocal et
 
 setlocal indentexpr=GetJuliaIndent()
 setlocal indentkeys+==end,=else,=catch,=finally,),],}
